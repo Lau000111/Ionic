@@ -5,7 +5,7 @@ import { checkTutorialGuard } from './providers/check-tutorial.guard';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: '/tutorial',
+    redirectTo: '/home',
     pathMatch: 'full',
   },
   {
@@ -34,9 +34,15 @@ export const routes: Routes = [
       import('./pages/tabs-page/routes').then(m => m.TABS_ROUTES),
   },
   {
+    path: 'home',
+    loadComponent: () =>
+      import('./pages/home/home').then(m => m.HomePage),
+    canMatch: [checkTutorialGuard],
+  },
+  {
     path: 'tutorial',
     loadComponent: () =>
-      import('./pages/tutorial/tutorial').then(m => m.TutorialPage),
+      import('./pages/home/home').then(m => m.HomePage),
     canMatch: [checkTutorialGuard],
   },
 ];

@@ -133,7 +133,7 @@ export class HomePage {
   }
 
   ionViewWillLeave() {
-    // enable the root left menu when leaving the tutorial page
+    // enable the root left menu when leaving the home page
     this.menu.enable(true);
   }
 }
