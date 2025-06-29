@@ -122,6 +122,10 @@ export class HomePage {
     }
   }
 
+  navigateToProfile() {
+    this.router.navigate(['/account']);
+  }
+
   ionViewWillEnter() {
     this.storage.get('ion_did_tutorial').then(res => {
       if (res === true) {

@@ -8,6 +8,26 @@
   padding: 40px 20px 20px;
   text-align: center;
   background: #1a1a1a;
+  position: relative;
+}
+
+.profile-icon-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.profile-icon {
+  font-size: 32px;
+  color: #00e5cc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    color: #00b8a3;
+    transform: scale(1.1);
+  }
 }
 
 .logo-container {
