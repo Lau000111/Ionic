@@ -40,7 +40,7 @@ export const routes: Routes = [
     canMatch: [checkTutorialGuard],
   },
   {
-    path: 'tutorial',
+    path: 'home',
     loadComponent: () =>
       import('./pages/home/home').then(m => m.HomePage),
     canMatch: [checkTutorialGuard],
