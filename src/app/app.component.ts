@@ -28,8 +28,12 @@ import {
 } from '@ionic/angular/standalone';
 import {
   calendarOutline,
+  chatbubbles,
+  copy,
+  folder,
   hammer,
   help,
+  home,
   informationCircleOutline,
   logIn,
   logOut,
@@ -38,6 +42,7 @@ import {
   peopleOutline,
   person,
   personAdd,
+  personCircle,
 } from 'ionicons/icons';
 import { UserService } from './providers/user.service';
 
@@ -113,6 +118,11 @@ export class AppComponent implements OnInit {
       personAdd,
       moonOutline,
       hammer,
+      home,
+      folder,
+      copy,
+      chatbubbles,
+      personCircle,
     });
   }
 

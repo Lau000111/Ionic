@@ -1,6 +1,9 @@
 .psy-con-home {
   --background: #1a1a1a;
   --color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 // Header Section
@@ -168,7 +171,7 @@
 
 // Sponsored Section
 .sponsored-section {
-  padding: 20px;
+  padding: 20px 20px 90px; // Increased bottom padding for global navigation
   background: #1a1a1a;
   
   .sponsored-title {
@@ -213,33 +216,5 @@
     font-weight: 600;
     font-size: 16px;
     margin-top: 10px;
-  }
-}
-
-// Bottom Navigation
-.bottom-nav-placeholder {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 15px 0;
-  background: #1a1a1a;
-  border-top: 1px solid #333;
-  margin-top: auto;
-  
-  .nav-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    
-    ion-icon {
-      font-size: 24px;
-      color: #666;
-    }
-    
-    &:first-child ion-icon {
-      color: #00e5cc; // Active state for home
-    }
   }
 }

@@ -91,3 +91,47 @@ ion-menu.ios ion-item ion-icon {
 ion-menu.ios ion-item.selected ion-icon {
   color: var(--ion-color-primary);
 }
+
+// Global Bottom Navigation
+.global-bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+  background: #1a1a1a;
+  border-top: 1px solid #333;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+    
+    ion-icon {
+      font-size: 24px;
+      color: #666;
+      transition: color 0.3s ease;
+    }
+    
+    &.active ion-icon {
+      color: #00e5cc;
+    }
+  }
+}
+
+// Add padding to main content to account for fixed bottom nav
+ion-router-outlet {
+  padding-bottom: 70px;
+}
