@@ -44,4 +44,114 @@
       </ion-segment-button>
     </ion-segment>
   </div>
+
+  <!-- News Feed Content -->
+  <div class="news-feed">
+    <!-- News Post 1 -->
+    <div class="news-post">
+      <div class="post-header">
+        <ion-avatar class="post-avatar">
+          <img src="assets/img/speakers/bear.jpg" alt="Amelia Theodore">
+        </ion-avatar>
+        <div class="post-info">
+          <h3 class="post-author">Amelia Theodore</h3>
+          <p class="post-specialty">in Psychotherapy</p>
+        </div>
+      </div>
+      
+      <div class="post-content">
+        <p class="post-text">Check out my outfit today with beautiful views</p>
+        <div class="post-image">
+          <img src="assets/img/appicon.png" alt="Post image">
+        </div>
+      </div>
+      
+      <div class="post-actions">
+        <div class="comment-input">
+          <input type="text" placeholder="Add a comment..." class="comment-field">
+          <ion-icon name="chevron-forward" class="send-icon"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- News Post 2 -->
+    <div class="news-post">
+      <div class="post-header">
+        <ion-avatar class="post-avatar">
+          <img src="assets/img/speakers/eagle.jpg" alt="Ryan Mitchell">
+        </ion-avatar>
+        <div class="post-info">
+          <h3 class="post-author">Ryan Mitchell</h3>
+          <p class="post-specialty">in Counseling</p>
+        </div>
+      </div>
+      
+      <div class="post-content">
+        <div class="audio-post">
+          <div class="audio-player">
+            <div class="audio-time">0:24</div>
+            <div class="audio-waveform">
+              <div class="waveform-bars">
+                <div class="bar" style="height: 20%"></div>
+                <div class="bar" style="height: 40%"></div>
+                <div class="bar" style="height: 60%"></div>
+                <div class="bar" style="height: 80%"></div>
+                <div class="bar" style="height: 100%"></div>
+                <div class="bar" style="height: 70%"></div>
+                <div class="bar" style="height: 50%"></div>
+                <div class="bar" style="height: 30%"></div>
+                <div class="bar" style="height: 90%"></div>
+                <div class="bar" style="height: 60%"></div>
+                <div class="bar" style="height: 40%"></div>
+                <div class="bar" style="height: 20%"></div>
+                <div class="bar" style="height: 10%"></div>
+                <div class="bar" style="height: 30%"></div>
+                <div class="bar" style="height: 50%"></div>
+                <div class="bar" style="height: 70%"></div>
+                <div class="bar" style="height: 40%"></div>
+                <div class="bar" style="height: 20%"></div>
+              </div>
+            </div>
+            <ion-icon name="play" class="play-button"></ion-icon>
+          </div>
+          <p class="audio-caption">and ground with your breath.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- News Post 3 -->
+    <div class="news-post">
+      <div class="post-header">
+        <ion-avatar class="post-avatar">
+          <img src="assets/img/speakers/kitten.jpg" alt="Emma Roberts">
+        </ion-avatar>
+        <div class="post-info">
+          <h3 class="post-author">Emma Roberts</h3>
+          <p class="post-specialty">in Clinical Psychology</p>
+        </div>
+      </div>
+      
+      <div class="post-content">
+        <div class="text-post">
+          <p class="post-text">Just finished an amazing session with a client who made a breakthrough today. These moments remind me why I love what I do. 💙</p>
+        </div>
+      </div>
+      
+      <div class="post-actions">
+        <div class="comment-input">
+          <input type="text" placeholder="Add a comment..." class="comment-field">
+          <ion-icon name="chevron-forward" class="send-icon"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Placeholder for other tabs -->
+  <div *ngIf="selectedTab === 'pins'" class="pins-content">
+    <p>Pins content will go here</p>
+  </div>
+
+  <div *ngIf="selectedTab === 'events'" class="events-content">
+    <p>Events content will go here</p>
+  </div>
 </ion-content>

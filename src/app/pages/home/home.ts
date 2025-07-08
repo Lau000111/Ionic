@@ -35,7 +35,9 @@ import {
   folder,
   copy,
   chatbubbles,
-  personCircle
+  personCircle,
+  chevronForward,
+  play
 } from 'ionicons/icons';
 
 @Component({
@@ -82,7 +84,9 @@ export class HomePage {
       folder,
       copy,
       chatbubbles,
-      personCircle
+      personCircle,
+      chevronForward,
+      play
     });
   }
 

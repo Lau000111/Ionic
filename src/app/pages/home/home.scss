@@ -218,3 +218,194 @@
     margin-top: 10px;
   }
 }
+
+// News Feed Styles
+.news-feed {
+  padding: 20px 16px;
+  background: #1a1a1a;
+  
+  .news-post {
+    background: #2a2a2a;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    
+    .post-header {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      gap: 12px;
+      
+      .post-avatar {
+        width: 40px;
+        height: 40px;
+        
+        img {
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      
+      .post-info {
+        flex: 1;
+        
+        .post-author {
+          font-size: 16px;
+          font-weight: 600;
+          color: #ffffff;
+          margin: 0;
+          line-height: 1.2;
+        }
+        
+        .post-specialty {
+          font-size: 14px;
+          color: #888;
+          margin: 2px 0 0 0;
+          line-height: 1.2;
+        }
+      }
+    }
+    
+    .post-content {
+      padding: 0 16px 16px;
+      
+      .post-text {
+        font-size: 15px;
+        color: #ffffff;
+        line-height: 1.4;
+        margin: 0 0 12px 0;
+      }
+      
+      .post-image {
+        border-radius: 8px;
+        overflow: hidden;
+        margin-top: 12px;
+        
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+      }
+      
+      .audio-post {
+        .audio-player {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          background: #333;
+          border-radius: 8px;
+          padding: 12px;
+          margin-bottom: 8px;
+          
+          .audio-time {
+            font-size: 14px;
+            color: #00e5cc;
+            font-weight: 500;
+            min-width: 30px;
+          }
+          
+          .audio-waveform {
+            flex: 1;
+            
+            .waveform-bars {
+              display: flex;
+              align-items: center;
+              gap: 2px;
+              height: 30px;
+              
+              .bar {
+                width: 3px;
+                background: #00e5cc;
+                border-radius: 2px;
+                opacity: 0.7;
+                transition: opacity 0.3s ease;
+                
+                &:nth-child(1),
+                &:nth-child(5),
+                &:nth-child(9) {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+          
+          .play-button {
+            font-size: 24px;
+            color: #00e5cc;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+        
+        .audio-caption {
+          font-size: 15px;
+          color: #ffffff;
+          margin: 0;
+          line-height: 1.4;
+        }
+      }
+      
+      .text-post {
+        .post-text {
+          font-size: 15px;
+          color: #ffffff;
+          line-height: 1.4;
+          margin: 0;
+        }
+      }
+    }
+    
+    .post-actions {
+      padding: 0 16px 16px;
+      
+      .comment-input {
+        display: flex;
+        align-items: center;
+        background: #333;
+        border-radius: 20px;
+        padding: 8px 16px;
+        gap: 8px;
+        
+        .comment-field {
+          flex: 1;
+          background: transparent;
+          border: none;
+          color: #ffffff;
+          font-size: 14px;
+          outline: none;
+          
+          &::placeholder {
+            color: #888;
+          }
+        }
+        
+        .send-icon {
+          font-size: 20px;
+          color: #00e5cc;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+          
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Placeholder content styles
+.pins-content,
+.events-content {
+  padding: 40px 20px;
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+}
